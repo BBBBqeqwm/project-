@@ -1,0 +1,19 @@
+##for make a list contain multiples of 8 that start with 360 and end with 1840##
+
+if width or height =16:
+    import random
+    list_multiples_of_eight=[]
+    value_for_list=int(360)
+    while value_for_list <=1840:
+        list_multiples_of_eight.apend(value_for_list )
+        value_for_list=value_for_list+8
+
+    ##the value of width and height will be a random number in the list if the number keyin is same or smaller than 16##
+
+    if width <=16:
+        width = random.choice(list_multiples_of_eight)
+    elif height<=16:
+        height = random.choice(list_multiples_of_eight)   
+    else:
+        height = random.choice(list_multiples_of_eight)
+        width = random.choice(list_multiples_of_eight)
